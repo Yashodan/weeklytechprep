@@ -25,7 +25,7 @@ body {
 
 .hero-group {
   width: 100%;
-  max-width: 75rem;
+  max-width: 70rem;
   padding: 2rem 0;
   flex: 0 0 auto;
   background-color: #fdfdfd;
@@ -46,7 +46,7 @@ body {
 
 .hero-copy p {
   font-size: 1.25rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
 
@@ -86,4 +86,52 @@ body {
   border-width: 2px;
   align-items: center;
   border-radius: 1rem;
+}
+
+/* Personal div */
+.personal {
+  padding: 3rem 4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.personal-box {
+  display: block;
+  width: 70rem;
+  border: solid;
+  border-width: 2px;
+  border-color: #f1f1f1;
+}
+
+.personal-text {
+  align-items: center;
+  margin: 3rem;
+  font-size: 1.25rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.personal-bio {
+  display: flex;
+  flex-direction: row;
+}
+.personal-img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+.personal-details {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.personal-details p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1rem;
 }
