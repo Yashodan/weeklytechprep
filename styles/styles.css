@@ -279,3 +279,114 @@ body {
 .test-story .test-details p {
   margin: 0;
 }
+
+/* Signup CTA */
+.signup {
+  padding: 3rem 4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.signup-main {
+  width: 100%;
+  max-width: 75rem;
+  flex: 0 0 auto;
+}
+
+.signup-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-copy h2 {
+  font-size: 3rem;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.signup-copy p {
+  font-size: 1.25rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+/* Footer */
+.footer {
+  padding: 3rem 4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #003399;
+}
+
+.footer-main {
+  width: 100%;
+  max-width: 75rem;
+  flex: 0 0 auto;
+}
+
+.footer-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-copy h2 {
+  font-size: 3rem;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #f1f1f1;
+}
+
+.footer-copy p {
+  font-size: 1.25rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: #f1f1f1;
+}
+
+.footercta {
+  display: flex;
+}
+
+.footer-cta input {
+  width: 20rem;
+  margin-right: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: solid;
+  border-width: 2px;
+  border-color: #f1f1f1;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.footer-cta input:focus {
+  outline: none;
+  border-color: #003399;
+  border-width: 1.5px;
+}
+
+.footer-cta button {
+  background-color: #ffcc00;
+  color: #141414;
+  width: 10rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: solid;
+  border-color: #ffcc00;
+  border-width: 2px;
+  align-items: center;
+  border-radius: 1rem;
+}
