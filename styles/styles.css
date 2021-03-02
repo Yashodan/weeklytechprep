@@ -100,10 +100,11 @@ body {
 
 .personal-box {
   display: block;
-  width: 70rem;
+  max-width: 70rem;
   border: solid;
   border-width: 2px;
   border-color: #f1f1f1;
+  flex: 0 0 auto;
 }
 
 .personal-text {
@@ -111,6 +112,7 @@ body {
   margin: 3rem;
   font-size: 1.25rem;
   font-family: "Open Sans", sans-serif;
+  font-weight: 300;
 }
 
 .personal-bio {
@@ -134,4 +136,97 @@ body {
   margin: 0;
   font-weight: bold;
   font-size: 1rem;
+  font-weight: 600;
+}
+
+/* How it works div */
+.how-it-works {
+  padding: 3rem 4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.how-main {
+  width: 100%;
+  max-width: 50rem;
+  flex: 0 0 auto;
+}
+
+.how-header {
+  text-align: center;
+}
+
+.how-header h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+}
+
+.how-steps {
+  display: flex;
+  flex-direction: column;
+}
+
+.steps {
+  margin: 1rem 0;
+}
+
+.step-title {
+  display: flex;
+  align-items: center;
+}
+
+.step-number {
+  color: #141414;
+  margin-right: 0.75rem;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  border: 2px solid #141414;
+  border-radius: 100%;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-title h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.step-text {
+  margin-left: 50px;
+}
+
+.step-text p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+.step-title .premium {
+  background-color: #ffcc00;
+  font-size: 1rem;
+  color: #141414;
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+  margin-left: 0.5rem;
+  font-weight: 500;
+}
+
+/* Testimonials div */
+.testimonials {
+  padding: 3rem 4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
