@@ -1,63 +1,66 @@
-/* Root elements */
-html {
-  font-size: 16px;
-}
-
+/* || GENERAL STYLES */
 body {
+  font-size: 16px;
   background-color: #fdfdfd;
   color: #141414;
   margin: 0;
   padding: 0;
 }
 
-/* Main div */
-/* Hero div */
-.hero {
-  padding: 6rem 4rem;
+h1 {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+p {
+  font-size: 1.25rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+/* || MAIN ELEMENTS */
+.outer-container {
+  padding: 3rem 4rem;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-image: url("../assets/img/credit_markus_wrinkler_unsplash.jpg");
-  background-size: 100%;
 }
 
-.hero-group {
+.inner-container {
   width: 100%;
-  max-width: 70rem;
-  padding: 2rem 0;
+  max-width: 75rem;
   flex: 0 0 auto;
-  background-color: #fdfdfd;
 }
 
-.hero-copy {
+.signup {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.hero-copy h1 {
-  font-size: 4rem;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-}
-
-.hero-copy p {
-  font-size: 1.25rem;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-}
-
-.cta {
-  display: flex;
-}
-
-.cta input {
+/* || UTILITY ELEMENTS */
+input {
   width: 20rem;
   margin-right: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   padding: 0.5rem 1rem;
@@ -65,112 +68,102 @@ body {
   border-width: 2px;
   border-color: #f1f1f1;
   align-items: center;
-  border-radius: 1rem;
+  border-radius: 2rem;
 }
 
-.cta input:focus {
+input:focus {
   outline: none;
   border-color: #003399;
   border-width: 1.5px;
 }
 
-.cta button {
+button {
   background-color: #003399;
   color: #fdfdfd;
   width: 10rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   border: solid;
   border-color: #003399;
   border-width: 2px;
   align-items: center;
-  border-radius: 1rem;
+  border-radius: 2rem;
 }
 
-/* Personal div */
-.personal {
-  padding: 3rem 4rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.personal-box {
-  display: block;
-  max-width: 70rem;
-  border: solid;
-  border-width: 2px;
-  border-color: #f1f1f1;
-  flex: 0 0 auto;
-}
-
-.personal-text {
-  align-items: center;
-  margin: 3rem;
-  font-size: 1.25rem;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-}
-
-.personal-bio {
-  display: flex;
-  flex-direction: row;
-}
-.personal-img img {
+.profile-picture img {
   width: 100px;
   height: 100px;
   border-radius: 100%;
   margin-right: 20px;
 }
 
-.personal-details {
+.profile-details {
   display: flex;
   flex-direction: column;
-  align-self: center;
 }
 
-.personal-details p {
+.profile-details p {
   margin: 0;
   font-weight: bold;
   font-size: 1rem;
   font-weight: 600;
 }
 
-/* How it works div */
-.how-it-works {
-  padding: 3rem 4rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+.premium {
+  background-color: #ffcc00;
+  font-size: 1rem;
+  color: #141414;
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+  margin-left: 0.5rem;
+  font-weight: 500;
+}
+
+/* || HERO ELEMENTS */
+#hero-container {
+  padding: 6rem 4rem;
+  background-image: url("../assets/img/credit_markus_wrinkler_unsplash.jpg");
+  background-size: 100%;
+}
+
+#hero-container-inner {
+  padding: 2rem 0;
+  background-color: #fdfdfd;
+}
+
+/* || PERSONAL ELEMENTS */
+#personal-container-inner {
+  border: 2px solid #f1f1f1;
+}
+
+.personal-stories {
+  align-self: center;
+}
+
+.personal-copy {
   align-items: center;
+  margin: 3rem;
 }
 
-.how-main {
-  width: 100%;
-  max-width: 50rem;
-  flex: 0 0 auto;
-}
-
-.how-header {
-  text-align: center;
-}
-
-.how-header h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 3rem;
-}
-
-.how-steps {
+.personal-bio {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+}
+
+/* || STEPS ELEMENTS */
+#steps-container-inner {
+  max-width: 50rem;
+  justify-content: center;
 }
 
 .steps {
-  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.steps-section {
+  margin-bottom: 1rem;
 }
 
 .step-title {
@@ -178,9 +171,9 @@ body {
   align-items: center;
 }
 
-.step-number {
+.step-title p {
   color: #141414;
-  margin-right: 0.75rem;
+  margin: 0.75rem;
   font-weight: 600;
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
@@ -194,65 +187,22 @@ body {
   align-items: center;
 }
 
-.step-title h3 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 0;
-}
-
-.step-text {
-  margin-left: 50px;
-}
-
 .step-text p {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  margin: 0;
+  margin: 0 0 0 55px;
 }
 
-.step-title .premium {
-  background-color: #ffcc00;
-  font-size: 1rem;
-  color: #141414;
-  padding: 0.25rem 1rem;
-  border-radius: 1rem;
-  margin-left: 0.5rem;
-  font-weight: 500;
+/* || SUCCESS STORIES*/
+#reviews {
+  margin: 0 0 1rem 0;
 }
 
-/* Testimonials div */
-.testimonials {
-  padding: 3rem 4rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.test-main {
-  width: 100%;
-  max-width: 75rem;
-  flex: 0 0 auto;
-}
-
-.test-head {
-  text-align: center;
-}
-
-.test-head h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 3rem;
-}
-
-.test-content {
+.success-content {
   display: grid;
   grid-auto-flow: column;
   gap: 5%;
 }
 
-.test-story {
+.success-story {
   display: grid;
   flex: 1 1;
   margin: 0 1rem;
@@ -261,178 +211,33 @@ body {
   padding: 2rem;
 }
 
-.test-content {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.1rem;
-  font-weight: 300;
+.success-story p {
+  font-size: 1rem;
 }
 
-.test-story .test-details {
-  display: flex;
-  flex-direction: column;
+.success-stories {
   align-self: flex-end;
-  font-weight: bold;
-  font-size: 1rem;
-  font-weight: 600;
 }
 
-.test-story .test-details p {
-  margin: 0;
+/* || FAQ ELEMENTS */
+.question-set {
+  margin: 2rem 0;
 }
 
-/* Signup CTA */
-.signup {
-  padding: 3rem 4rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+.question-set p {
+  margin: 0.5rem 0;
 }
 
-.signup-main {
-  width: 100%;
-  max-width: 75rem;
-  flex: 0 0 auto;
-}
-
-.signup-copy {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.signup-copy h2 {
-  font-size: 3rem;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-}
-
-.signup-copy p {
-  font-size: 1.25rem;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-}
-
-/* Footer */
-.footer {
-  padding: 3rem 4rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+/* || FOOTER ELEMENT */
+#footer-container {
   background-color: #003399;
-}
-
-.footer-main {
-  width: 100%;
-  max-width: 75rem;
-  flex: 0 0 auto;
-}
-
-.footer-copy {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-copy h2 {
-  font-size: 3rem;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
   color: #f1f1f1;
-}
-
-.footer-copy p {
-  font-size: 1.25rem;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  color: #f1f1f1;
-}
-
-.footercta {
-  display: flex;
-}
-
-.footer-cta input {
-  width: 20rem;
-  margin-right: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  border: solid;
-  border-width: 2px;
-  border-color: #f1f1f1;
-  align-items: center;
-  border-radius: 1rem;
-}
-
-.footer-cta input:focus {
-  outline: none;
-  border-color: #003399;
-  border-width: 1.5px;
 }
 
 .footer-cta button {
   background-color: #ffcc00;
   color: #141414;
-  width: 10rem;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  border: solid;
   border-color: #ffcc00;
-  border-width: 2px;
-  align-items: center;
-  border-radius: 1rem;
 }
 
-/* Questions div */
-.questions {
-  padding: 3rem 4rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.questions-main {
-  width: 100%;
-  max-width: 75rem;
-  flex: 0 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.questions-head {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.questions-head h2 {
-  font-size: 3rem;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-}
-
-.question-set {
-  margin: 1rem 0;
-}
-
-.question-type {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 0;
-}
-
-.answer-type {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-}
+/* || MOBILE OPTIMIZATION */
