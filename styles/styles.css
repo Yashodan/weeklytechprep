@@ -149,7 +149,7 @@ button {
 
 .personal-bio {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 /* || STEPS ELEMENTS */
@@ -254,6 +254,7 @@ button {
 
   h3 {
     font-size: 1rem;
+    padding-bottom: 1rem;
   }
 
   p {
@@ -311,6 +312,17 @@ button {
 
   .personal-copy {
     margin: 2rem;
+  }
+
+  /* || STEPS */
+
+  .step-title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step-text p {
+    margin: 0;
   }
 
   /* || SUCCESS STORIES*/
