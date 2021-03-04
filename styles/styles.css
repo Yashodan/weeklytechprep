@@ -11,6 +11,7 @@ h1 {
   font-size: 3rem;
   font-family: "Poppins", sans-serif;
   margin: 0;
+  text-align: center;
 }
 
 h2 {
@@ -197,8 +198,8 @@ button {
 }
 
 .success-content {
-  display: grid;
-  grid-auto-flow: column;
+  display: flex;
+  flex-direction: row;
   gap: 5%;
 }
 
@@ -241,3 +242,84 @@ button {
 }
 
 /* || MOBILE OPTIMIZATION */
+@media (max-width: 480px) {
+  /* || GENERAL STYLES */
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  /* || MAIN ELEMENTS */
+  .outer-container {
+    padding: 1.5rem 2rem;
+  }
+
+  /* || UTILITY ELEMENTS */
+  input {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .profile-picture img {
+    margin-right: 0;
+    padding-bottom: 1rem;
+  }
+
+  .profile-details p {
+    text-align: center;
+  }
+
+  .premium {
+    font-size: 0.55rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    margin-left: 0.25rem;
+    font-weight: 600;
+  }
+
+  /* || HERO ELEMENTS */
+  #hero-container {
+    padding: 3rem 2rem;
+    background-image: none;
+    background-size: none;
+  }
+
+  #hero-container-inner {
+    padding: 0;
+  }
+
+  /* || PERSONAL ELEMENTS */
+  .profile-picture {
+    display: flex;
+    justify-content: center;
+  }
+
+  .personal-copy {
+    margin: 2rem;
+  }
+
+  /* || SUCCESS STORIES*/
+  .success-content {
+    flex-direction: column;
+  }
+
+  .success-story {
+    margin: 1rem 0rem;
+    padding: 1rem;
+  }
+}
