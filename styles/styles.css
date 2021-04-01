@@ -129,14 +129,46 @@ button {
   font-weight: 500;
 }
 
+/* || MENU ELEMENTS */
+
+.menu {
+  padding: 1.5rem 5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+ul li {
+  display: inline-block;
+  font-family: "Montserrat";
+  font-weight: 500;
+  padding: 0 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  float: left;
+}
+
+.logo-square {
+  height: 42px;
+  border-radius: 0.3rem;
+}
+
+.logo-long {
+  height: 30px;
+  padding: 0 0 0 1rem;
+}
+
 /* || HERO ELEMENTS */
 #hero-container {
-  padding: 6rem 4rem;
+  padding: 6rem 5rem;
   background-size: 100%;
 }
 
 #hero-container-inner {
-  padding: 2rem 1rem;
+  padding: 2rem 0rem;
 }
 
 .hero-headline {
