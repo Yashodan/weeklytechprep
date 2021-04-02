@@ -14,15 +14,16 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
-  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   text-align: center;
+  padding: 0 0 1rem 0;
 }
 
 h3 {
   font-size: 1.25rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   margin: 0;
 }
@@ -35,25 +36,14 @@ p {
 
 /* || MAIN ELEMENTS */
 .outer-container {
-  padding: 3rem 4rem;
+  padding: 2rem 4rem;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.outer-container-2 {
-  padding: 3rem 4rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 
 .inner-container {
   width: 100%;
-  max-width: 75rem;
   flex: 0 0 auto;
 }
 
@@ -120,12 +110,11 @@ button {
 }
 
 .premium {
-  background-color: #ffcc00;
+  background-color: #4a5996;
   font-size: 1rem;
-  color: #141414;
-  padding: 0.25rem 1rem;
-  border-radius: 1rem;
-  margin-left: 0.5rem;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
   font-weight: 500;
 }
 
@@ -163,7 +152,7 @@ ul li {
 
 /* || HERO ELEMENTS */
 #hero-container {
-  padding: 6rem 5rem;
+  padding: 6rem 5rem 2rem;
   background-size: 100%;
 }
 
@@ -205,8 +194,8 @@ ul li {
 
 /* || STEPS ELEMENTS */
 #steps-container-inner {
-  max-width: 50rem;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .steps {
@@ -215,32 +204,62 @@ ul li {
 }
 
 .steps-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 50rem;
+  align-self: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.steps-hang-half {
+  margin-top: -10rem;
+}
+
+.section-right {
+  margin-right: 45rem;
+}
+
+.section-left {
+  margin-left: 45rem;
+}
+
+.card-left {
+  margin-right: 3rem;
+}
+
+.card-right {
+  margin-left: 3rem;
+}
+
+.step-card {
   margin-bottom: 1rem;
+  background-color: #171c26;
+  padding: 3rem;
+  width: 20rem;
+  min-height: 10rem;
+  align-self: center;
+  position: absolute;
+  border-radius: 0.3rem;
 }
 
-.step-title {
-  display: flex;
-  align-items: center;
+.step-card:hover {
+  background-color: rgba(23, 28, 38, 0.9);
 }
 
-.step-title p {
-  color: #141414;
-  margin: 0.75rem;
-  font-weight: 600;
-  font-size: 1rem;
-  font-family: "Open Sans", sans-serif;
-  border: 2px solid #141414;
-  border-radius: 100%;
-  text-align: center;
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.step-img-left {
+  margin-left: 15rem;
+  margin-top: 5rem;
 }
 
-.step-text p {
-  margin: 0 0 0 55px;
+.step-img-right {
+  margin-right: 15rem;
+  margin-top: 5rem;
+}
+
+.steps img {
+  width: 25rem;
+  border-radius: 0.3rem;
 }
 
 /* || SUCCESS STORIES*/
