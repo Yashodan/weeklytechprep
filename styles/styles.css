@@ -200,65 +200,29 @@ button {
 
 .steps {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
 }
 
 .steps-section {
   display: flex;
   flex-direction: column;
-  max-width: 50rem;
-  align-self: center;
-  align-items: center;
+  width: 33%;
   margin-bottom: 2rem;
-}
-
-.steps-hang-half {
-  margin-top: -10rem;
-}
-
-.section-right {
-  margin-right: 45rem;
-}
-
-.section-left {
-  margin-left: 45rem;
-}
-
-.card-left {
-  margin-right: 3rem;
-}
-
-.card-right {
-  margin-left: 3rem;
+  position: relative;
 }
 
 .step-card {
   background-color: #171c26;
   padding: 3rem;
-  width: 20rem;
-  min-height: 10rem;
-  align-self: center;
-  position: absolute;
+  height: 100%;
   border-radius: 0.3rem;
 }
 
-.step-card:hover {
-  background-color: rgba(23, 28, 38, 0.9);
-}
-
-.step-img-left {
-  margin-left: 15rem;
-  margin-top: 5rem;
-}
-
-.step-img-right {
-  margin-right: 15rem;
-  margin-top: 5rem;
-}
-
-.steps img {
-  width: 25rem;
-  border-radius: 0.3rem;
+.steps-section img {
+  width: 100%;
 }
 
 /* || CHALLENGES */
