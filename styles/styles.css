@@ -231,7 +231,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 50%;
+  width: 33%;
   background-color: #171c26;
   padding: 3rem;
   border-radius: 0.3rem;
@@ -240,23 +240,27 @@ button {
 
 .challenge-col {
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
 }
 
 /* || SUCCESS STORIES*/
 
 .success-content {
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
 }
 
 .success-story {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 50%;
+  max-width: 33%;
   background-color: #171c26;
   padding: 3rem;
   border-radius: 0.3rem;
@@ -275,24 +279,23 @@ button {
 
 .pricing-table {
   display: flex;
-  width: 100%;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 4rem;
 }
 
 .price {
-  width: 35%;
+  width: 33%;
   background-color: #171c26;
-  margin-right: 2rem;
   border-radius: 0.3rem;
   padding: 3rem;
   text-align: center;
 }
 
 .benefits {
-  width: 35%;
+  width: 33%;
   background-color: #171c26;
-  margin-left: 2rem;
   border-radius: 0.3rem;
   padding: 3rem;
 }
@@ -317,6 +320,9 @@ button {
 /* || FAQ ELEMENTS */
 .question-set {
   margin: 2rem 0;
+  background-color: #171c26;
+  padding: 3rem;
+  border-radius: 0.3rem;
 }
 
 .question-set p {
