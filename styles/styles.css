@@ -127,7 +127,7 @@ button {
   align-items: center;
 }
 
-ul li {
+.menu ul li {
   display: inline-block;
   font-family: "Montserrat";
   font-weight: 500;
@@ -297,6 +297,7 @@ ul li {
   padding: 3rem;
   border-radius: 0.3rem;
   margin-bottom: 2rem;
+}
 
 .success-story p {
   font-size: 1rem;
@@ -304,6 +305,49 @@ ul li {
 
 .success-stories {
   align-self: flex-end;
+}
+
+/* || PRICING ELEMENTS */
+
+.pricing-table {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.price {
+  width: 35%;
+  background-color: #171c26;
+  margin-right: 2rem;
+  border-radius: 0.3rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+.benefits {
+  width: 35%;
+  background-color: #171c26;
+  margin-left: 2rem;
+  border-radius: 0.3rem;
+  padding: 3rem;
+}
+
+.benefits h3 {
+  text-align: center;
+}
+
+.price-number {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.pricing-sub {
+  margin: 0 0;
+}
+
+.features {
+  text-align: left;
 }
 
 /* || FAQ ELEMENTS */
