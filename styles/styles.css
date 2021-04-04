@@ -1,107 +1,78 @@
 /* || GENERAL STYLES */
-
 body {
-  font-size: 16px;
+  font: 400 16px "Montserrat", sans-serif;
   background-color: #101218;
   color: #f5f5f5;
   margin: 0;
   padding: 0;
 }
 
-h1 {
-  font: 600 3rem "Montserrat", sans-serif;
+h1,
+h3 {
   margin: 0;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 3rem;
 }
 
 h2 {
-  font: 500 2rem "Montserrat", sans-serif;
-  margin: 0;
-  padding: 0 0 3rem;
+  font-weight: 500;
+  font-size: 2rem;
   text-align: center;
+  margin: 0 0 2rem;
 }
 
 h3 {
-  font: 500 1.25rem "Montserrat", sans-serif;
-  margin: 0;
+  font-weight: 500;
+  font-size: 1.25rem;
 }
 
 p {
-  font: 400 1rem "Montserrat", sans-serif;
+  line-height: 1.5rem;
+}
+
+a:link,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+a:hover {
+  color: #4a5996;
 }
 
 /* || MAIN ELEMENTS */
-.outer-container {
+.section {
+  display: flex;
+  flex-direction: column;
   padding: 2rem 4rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
 }
 
-.inner-container {
-  width: 100%;
-  flex: 0 0 auto;
-}
-
-.signup {
+.section__inner {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
-  margin: 0 364px 24px 0;
+  gap: 5rem;
 }
 
 /* || UTILITY ELEMENTS */
-input {
-  width: 20rem;
-  margin-right: 1rem;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  border: solid;
-  border-width: 2px;
-  border-color: #f1f1f1;
-  align-items: center;
-  border-radius: 2rem;
-}
-
-input:focus {
-  outline: none;
-  border-color: #003399;
-  border-width: 1.5px;
-}
-
 button {
+  font: 500 1rem "Montserrat", sans-serif;
+  color: #f5f5f5;
   background-color: #4a5996;
-  color: #fdfdfd;
-  font-family: "Montserrat";
-  font-size: 1rem;
   padding: 1rem 2rem;
-  border: solid;
-  border-color: #4a5996;
-  border-width: 2px;
-  align-items: center;
+  border: 2px solid #4a5996;
   border-radius: 0.3rem;
-  font-weight: 500;
 }
 
-.profile-picture img {
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  margin-right: 20px;
-}
-
-.profile-details {
-  display: flex;
-  flex-direction: column;
-}
-
-.profile-details p {
-  margin: 0;
-  font-weight: bold;
-  font-size: 1rem;
-  font-weight: 600;
+button:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .premium {
@@ -113,107 +84,64 @@ button {
   font-weight: 500;
 }
 
-/* || MENU ELEMENTS */
+/* || NAVIGATION ELEMENTS */
 
-.menu {
+.navbar {
   padding: 1.5rem 5rem;
-  overflow: hidden;
   display: flex;
   align-items: center;
 }
 
-.menu ul li {
+.navbar__links li {
   display: inline-block;
-  font-family: "Montserrat";
   font-weight: 500;
-  padding: 0 10px;
+  padding: 0 0.75rem;
 }
 
-.logo {
+.navbar__site-logo {
   display: flex;
   align-items: center;
   float: left;
 }
 
-.logo-square {
+.navbar__site-logo_short {
   height: 42px;
   border-radius: 0.3rem;
 }
 
-.logo-long {
+.navbar__site-logo_long {
   height: 30px;
   padding: 0 0 0 1rem;
 }
 
 /* || HERO ELEMENTS */
-#hero-container {
-  padding: 6rem 5rem 2rem;
-  background-size: 100%;
+.hero {
+  padding: 8rem 5rem 4rem;
 }
 
-#hero-container-inner {
-  padding: 2rem 0rem;
-}
-
-.hero-headline {
+.hero__headline {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  align-self: flex-start;
-  margin: 0 364px 24px 0;
+  margin: 0 30% 1.5rem 0;
 }
 
-.hero-headline p {
+.hero__subline {
   margin: 24px 0;
 }
 
-/* || PERSONAL ELEMENTS */
-#personal-container-inner {
-  border: 2px solid #f1f1f1;
-}
-
-.personal-stories {
-  align-self: center;
-}
-
-.personal-copy {
-  align-items: center;
-  margin: 3rem;
-}
-
-.personal-bio {
-  display: flex;
-  flex-direction: row;
-}
-
 /* || STEPS ELEMENTS */
-#steps-container-inner {
-  display: flex;
-  flex-direction: column;
-}
-
-.steps {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 4rem;
-}
-
 .steps-section {
   display: flex;
   flex-direction: column;
   width: 33%;
   margin-bottom: 2rem;
-  position: relative;
 }
 
-.step-card {
+.step-section__card {
   background-color: #171c26;
   padding: 3rem;
   height: 100%;
-  border-radius: 0.3rem;
+  border-radius: 0.3rem 0.3rem 0 0;
 }
 
 .steps-section img {
@@ -233,24 +161,7 @@ button {
   margin-bottom: 2rem;
 }
 
-.challenge-col {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 4rem;
-}
-
 /* || SUCCESS STORIES*/
-
-.success-content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 4rem;
-}
-
 .success-story {
   display: flex;
   flex-direction: column;
@@ -271,16 +182,7 @@ button {
 }
 
 /* || PRICING ELEMENTS */
-
-.pricing-table {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 4rem;
-}
-
-.price {
+.price__box {
   width: 33%;
   background-color: #171c26;
   border-radius: 0.3rem;
@@ -288,32 +190,37 @@ button {
   text-align: center;
 }
 
-.benefits {
+.price__box_no-centre {
   width: 33%;
   background-color: #171c26;
   border-radius: 0.3rem;
   padding: 3rem;
 }
 
-.benefits h3 {
+.price__box_no-centre h3 {
   text-align: center;
 }
 
-.price-number {
+.price__head {
   font-size: 2rem;
   margin: 0;
 }
 
-.pricing-sub {
+.price__sub {
   margin: 0 0;
 }
 
-.features {
+.price__features {
   text-align: left;
 }
 
 /* || FAQ ELEMENTS */
-.question-set {
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.faq__set {
   margin: 0 0 3rem;
   background-color: #171c26;
   padding: 3rem;
@@ -321,14 +228,8 @@ button {
   border-radius: 0.3rem;
 }
 
-.question-set p {
+.faq__set p {
   margin: 0.5rem 0;
-}
-
-.inner-container-question {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /* || FOOTER ELEMENT */

@@ -1,206 +1,227 @@
 <!DOCTYPE html5>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WeeklyTechPrep</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href="styles/styles.css" rel="stylesheet">
-</head>
-<body>
-        <div class="menu">
-            <div class="logo">
-                <img src="/assets/img/wtp_logo_square.png" class="logo-square">
-                <img src="/assets/img/wtp_logo_long.png" class="logo-long">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar__site-logo">
+        <img
+          src="/assets/img/wtp_logo_square.png"
+          class="navbar__site-logo_short"
+        />
+        <img
+          src="/assets/img/wtp_logo_long.png"
+          class="navbar__site-logo_long"
+        />
+      </div>
+      <div class="navbar__links">
+        <ul>
+          <li><a href="#steps">How it Works</a></li>
+          <li><a href="#example">Example</a></li>
+          <li><a href="#review">Reviews</a></li>
+          <li><a href="#price">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="hero__headline">
+        <h1>Master SAP Solution Manager with 20 minutes of practice a week</h1>
+        <p class="hero__subline">
+          20-minute competency challenges that help improve your SAP skills and
+          knowledge
+        </p>
+        <a href="#"><button>Pre-order for $1.99</button></a>
+      </div>
+    </div>
+    <div class="section" id="steps">
+      <h2>How it Works</h2>
+      <div class="section__inner">
+        <div class="steps-section">
+          <div class="step-section__card">
+            <div class="step-title">
+              <p>Step 1</p>
+              <h3>You sign up</h3>
             </div>
-            <nav>
-                <ul>
-                    <li>How it Works</li>
-                    <li>Pricing</li>
-                    <li>FAQ</li>
-                </ul>
-            </nav>
+            <div class="step-text">
+              <p>Enter your email to start recieving challenges.</p>
+            </div>
+          </div>
+          <div>
+            <img src="assets/img/sign-up.gif" />
+          </div>
         </div>
-        <div class="main">
-            <div class="outer-container" id="hero-container">
-                <div class="inner-container" id="hero-container-inner">
-                    <div class="hero-headline">
-                        <h1>Master SAP Solution Manager with 20 minutes of practice a week</h1>
-                        <p>20-minute competency challenges that help improve your SAP skills and knowledge</p>
-                        <a href="#"><button>Pre-order for $1.99</button></a>
-                    </div>
-                </div>
+        <div class="steps-section">
+          <div class="step-section__card">
+            <div class="step-title">
+              <p>Step 2</p>
+              <h3>We send challenges</h3>
             </div>
+            <div class="step-text">
+              <p>Receive weekly competency challenges in your inbox.</p>
+            </div>
+          </div>
+          <div>
+            <img src="assets/img/challenge.gif" />
+          </div>
         </div>
-        <div class="outer-container">
-            <div class="inner-container" id="steps-container-inner">
-                <div>
-                    <h2>How it Works</h2>
-                </div>
-                <div class="steps">
-                    <div class="steps-section">
-                        <div class="step-card">
-                            <div class="step-title">
-                                <p>Step 1</p>
-                                <h3>You sign up</h3>
-                            </div>
-                            <div class="step-text">
-                                <p>Enter your email to start recieving challenges.</p>
-                            </div>
-                        </div>
-                        <div class="">
-                            <img src="assets/img/sign-up.gif">
-                        </div>
-                    </div>
-                    <div class="steps-section">
-                        <div class="step-card">
-                            <div class="step-title">
-                                <p>Step 2</p>
-                                <h3>We send challenges</h3>
-                            </div>
-                            <div class="step-text">
-                                <p>Receive weekly competency challenges in your inbox.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="assets/img/challenge.gif">
-                        </div>
-                    </div>
-                    <div class="steps-section">
-                        <div class="step-card">
-                            <div class="step-title">
-                                <p>Step 3</p>
-                                <h3>You answer challenges</h3>
-                            </div>
-                            <div class="step-text">
-                                <p>Work through weekly challenges.</p>
-                            </div>
-                        </div>
-                        <div class="">
-                            <img src="assets/img/solve.gif">
-                        </div>
-                    </div>
-                    <div class="steps-section">
-                        <div class="step-card">
-                            <div class="step-title">
-                                <p>Step 4</p>
-                                <h3>We send solutions</h3>
-                            </div>
-                            <div class="step-text">
-                                <p>Recieve guided expert answers for challenges.</p>
-                                <p class="premium">Premium</p>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="assets/img/solution.gif">
-                        </div>
-                    </div>
-                </div>
+        <div class="steps-section">
+          <div class="step-section__card">
+            <div class="step-title">
+              <p>Step 3</p>
+              <h3>You answer challenges</h3>
             </div>
+            <div class="step-text">
+              <p>Work through weekly challenges.</p>
+            </div>
+          </div>
+          <div>
+            <img src="assets/img/solve.gif" />
+          </div>
         </div>
-        <div class="outer-container">
-            <div class="inner-container">
-                <div>
-                    <h2>Example challenge</h2>
-                </div>
-                <div class="challenge-col">
-                <div class="challenge-card">
-                    <h3>#1 Competency Challenge</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis laborum eos qui ut optio laudantium corporis dolorem, quam ex necessitatibus porro quos cumque molestias mollitia et molestiae, exercitationem officiis fugit!</p>
-                </div>
-                <div class="challenge-card">
-                    <h3>#1 Expert Answer</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis laborum eos qui ut optio laudantium corporis
-                        dolorem, quam ex necessitatibus porro quos cumque molestias mollitia et molestiae, exercitationem officiis
-                        fugit!</p>
-                </div>
-                </div>
+        <div class="steps-section">
+          <div class="step-section__card">
+            <div class="step-title">
+              <p>Step 4</p>
+              <h3>We send solutions</h3>
             </div>
+            <div class="step-text">
+              <p>Recieve guided expert answers for challenges.</p>
+              <p class="premium">Premium</p>
+            </div>
+          </div>
+          <div>
+            <img src="assets/img/solution.gif" />
+          </div>
         </div>
-        <div class="outer-container">
-                <div class="inner-container">
-                    <div>
-                        <h2 id="reviews">Reviews</h2>
-                    </div>
-                    <div class="success-content">
-                        <div class="success-story">
-                            <p>
-                                "Definitely worth the investment! I am really satisfied with WTP. I like that I get to improve my expertise every week
-                                through WTP’s emails.”
-                            </p>
-                            <div class="profile-details success-stories">
-                                <p>Kaylen Naidoo</p>
-                            </div>
-                        </div>
-                        <div class="success-story">
-                            <p>
-                                "One of the best SAP improvement tools. WTP is easy to use and provides spam-free challenges to help improve my SAP
-                                knowledge. Thank You!"
-                            </p>
-                            <div class="profile-details success-stories">
-                                <p>Marlee U.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <div class="outer-container">
-                <div class="inner-container">
-                    <div>
-                        <h2>Pricing</h2>
-                    </div>
-                    <div class="pricing-table">
-                        <div class="price">
-                            <p class="price-number">$199</p>
-                            <p class="pricing-sub">per annum</p>
-                            <div class="features">
-                                <p>1. Receive weekly solman challenges drafted from experts</p>
-                                <p>2. Live chat support for bugs</p>
-                                <p>3. Simple yearly payments</p>
-                                <p>4. Cancel Anytime</p>    
-                            </div>
-                            <button>
-                                Pre-order for $1.99
-                            </button>
-                        </div>
-                        <div class="benefits">
-                            <h3>Benefits</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore officiis error dignissimos autem et a nemo, quidem placeat aliquam sint repellat voluptatem necessitatibus commodi obcaecati itaque quos alias consectetur quibusdam?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <div class="outer-container">
-                <div class="inner-container">
-                    <h2>FAQs</h2>
-                    <div class="inner-container-question">
-                    <div class="question-set">
-                        <h3>Where are your challenges and solutions sourced from?</h3>
-                        <p>All challenges and solutions are developed by module subject matter experts (SMEs). These SMEs are well known in their fields and have years of experience. We include the SME's social media accounts in case you want to chat with them and ask them questions.</p>
-                    </div>
-                    <div class="question-set">
-                        <h3>I do not have experience in SAP. Should I still subscribe?</h3>
-                        <p>Yes! While the challenges are designed for people who want to improve their SAP knowledge, WTP can still be a great
-                        solution for those that are learning SAP. However, it is advised that it is used in conjunction with other learning
-                        material (Such as SAP Learning Hub or SAP guides).</p>
-                    </div>
-                    <div class="question-set">
-                        <h3>Why not an educational platform like SAP Learning Hub or Udemy?</h3>
-                        <p>If you’re new to learning SAP, you should go with a more thorough course that will teach you the
-                        basics of your chosen SAP module and use WTP to complement your learning as WTP assumes that a student has the appropriate baseline knowledge. However, if you're a professional in the field already, then WTP can be a time and cost effective solution to SAP Learning Hub and Udemy.</p>
-                    </div>
-                    <div class="question-set">
-                        <h3>Is WeeklyTechPrep really worth it?</h3>
-                        <p>The answer depends on your seniority and location. The salary of a SAP Technical consultant is approximately $80,000 at
-                        a company like IBM. If the chance of landing is 10% chance improved, then you would have paid $54 for an expected value
-                        of $8,000. That’s approximately 148 times ROI.</p>
-                    </div>
-                    </div>
-                </div>
-
-            </div>
+      </div>
+    </div>
+    <div class="section" id="example">
+      <h2>Example challenge</h2>
+      <div class="section__inner">
+        <div class="challenge-card">
+          <h3>#1 Competency Challenge</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
+            laborum eos qui ut optio laudantium corporis dolorem, quam ex
+            necessitatibus porro quos cumque molestias mollitia et molestiae,
+            exercitationem officiis fugit!
+          </p>
         </div>
-</body>
+        <div class="challenge-card">
+          <h3>#1 Expert Answer</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
+            laborum eos qui ut optio laudantium corporis dolorem, quam ex
+            necessitatibus porro quos cumque molestias mollitia et molestiae,
+            exercitationem officiis fugit!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h2 id="review">Reviews</h2>
+      <div class="section__inner">
+        <div class="success-story">
+          <p>
+            "Definitely worth the investment! I am really satisfied with WTP. I
+            like that I get to improve my expertise every week through WTP’s
+            emails.”
+          </p>
+          <div class="profile-details success-stories">
+            <p>Kaylen Naidoo</p>
+          </div>
+        </div>
+        <div class="success-story">
+          <p>
+            "One of the best SAP improvement tools. WTP is easy to use and
+            provides spam-free challenges to help improve my SAP knowledge.
+            Thank You!"
+          </p>
+          <div class="profile-details success-stories">
+            <p>Marlee U.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h2 id="price">Pricing</h2>
+      <div class="section__inner">
+        <div class="price__box">
+          <h3 class="price__head">$199</h3>
+          <p class="price__sub">per annum</p>
+          <div class="price__features">
+            <p>1. Receive weekly solman challenges drafted from experts</p>
+            <p>2. Live chat support for bugs</p>
+            <p>3. Simple yearly payments</p>
+            <p>4. Cancel Anytime</p>
+          </div>
+          <button>Pre-order for $1.99</button>
+        </div>
+        <div class="price__box_no-centre">
+          <h3>Benefits</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            officiis error dignissimos autem et a nemo, quidem placeat aliquam
+            sint repellat voluptatem necessitatibus commodi obcaecati itaque
+            quos alias consectetur quibusdam?
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section faq" id="faq">
+      <h2>FAQs</h2>
+        <div class="faq__set">
+          <h3>Where are your challenges and solutions sourced from?</h3>
+          <p>
+            All challenges and solutions are developed by module subject matter
+            experts (SMEs). These SMEs are well known in their fields and have
+            years of experience. We include the SME's social media accounts in
+            case you want to chat with them and ask them questions.
+          </p>
+        </div>
+        <div class="faq__set">
+          <h3>I do not have experience in SAP. Should I still subscribe?</h3>
+          <p>
+            Yes! While the challenges are designed for people who want to
+            improve their SAP knowledge, WTP can still be a great solution for
+            those that are learning SAP. However, it is advised that it is used
+            in conjunction with other learning material (Such as SAP Learning
+            Hub or SAP guides).
+          </p>
+        </div>
+        <div class="faq__set">
+          <h3>
+            Why not an educational platform like SAP Learning Hub or Udemy?
+          </h3>
+          <p>
+            If you’re new to learning SAP, you should go with a more thorough
+            course that will teach you the basics of your chosen SAP module and
+            use WTP to complement your learning as WTP assumes that a student
+            has the appropriate baseline knowledge. However, if you're a
+            professional in the field already, then WTP can be a time and cost
+            effective solution to SAP Learning Hub and Udemy.
+          </p>
+        </div>
+        <div class="faq__set">
+          <h3>Is WeeklyTechPrep really worth it?</h3>
+          <p>
+            The answer depends on your seniority and location. The salary of a
+            SAP Technical consultant is approximately $80,000 at a company like
+            IBM. If the chance of landing is 10% chance improved, then you would
+            have paid $54 for an expected value of $8,000. That’s approximately
+            148 times ROI.
+          </p>
+        </div>
+  </body>
 </html>
