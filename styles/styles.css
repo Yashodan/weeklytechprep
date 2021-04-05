@@ -117,6 +117,8 @@ button:focus {
 /* || HERO ELEMENTS */
 .hero {
   padding: 8rem 5rem 4rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero__headline {
@@ -166,7 +168,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 33%;
+  width: 33%;
   background-color: #171c26;
   padding: 3rem;
   border-radius: 0.3rem;
@@ -187,6 +189,7 @@ button:focus {
   background-color: #171c26;
   border-radius: 0.3rem;
   padding: 3rem;
+  margin: 0 0 2rem;
   text-align: center;
 }
 
@@ -245,101 +248,53 @@ button:focus {
 }
 
 /* || MOBILE OPTIMIZATION */
-@media (max-width: 820px) {
-  /* || GENERAL STYLES */
-  h1 {
-    font-size: 2.25rem;
+@media (max-width: 960px) {
+  .steps-section {
+    width: 45%;
   }
-
-  h2 {
-    font-size: 1.75rem;
-  }
-
-  h3 {
-    font-size: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
-  /* || MAIN ELEMENTS */
-  .outer-container {
-    padding: 1.5rem 2rem;
-  }
-
-  /* || UTILITY ELEMENTS */
-  input {
-    width: 100%;
-    margin: 0 0 1rem 0;
-  }
-
-  button {
-    width: 100%;
-  }
-
-  .profile-picture img {
-    margin-right: 0;
-    padding-bottom: 1rem;
-  }
-
-  .profile-details p {
-    text-align: center;
-  }
-
-  .premium {
-    font-size: 0.55rem;
-    padding: 0.25rem 0.5rem;
-    border-radius: 1rem;
-    margin-left: 0.25rem;
-    font-weight: 600;
-  }
-
-  /* || HERO ELEMENTS */
-  #hero-container {
-    padding: 3rem 2rem;
-    background-image: none;
-    background-size: none;
-  }
-
-  #hero-container-inner {
-    padding: 0;
-  }
-
-  /* || PERSONAL ELEMENTS */
-  .profile-picture {
-    display: flex;
-    justify-content: center;
-  }
-
-  .personal-copy {
-    margin: 2rem;
-  }
-
-  .personal-bio {
-    display: flex;
+  .navbar {
     flex-direction: column;
   }
+}
 
-  /* || STEPS */
-
-  .step-title {
-    display: flex;
-    flex-direction: column;
+@media (max-width: 925px) {
+  .steps-section {
+    width: 75%;
   }
-
-  .step-text p {
-    margin: 0;
+  .challenge-card {
+    width: 63%;
   }
-
-  /* || SUCCESS STORIES*/
-  .success-content {
-    flex-direction: column;
-  }
-
   .success-story {
-    margin: 1rem 0rem;
-    padding: 1rem;
+    width: 63%;
+  }
+  .price__box {
+    width: 63%;
+  }
+  .price__box_no-centre {
+    width: 63%;
+  }
+
+  .faq__set {
+    width: 63%;
+  }
+}
+
+@media (max-width: 820px) {
+  .section__inner {
+    gap: 0rem;
+  }
+
+  .hero {
+    padding: 3rem;
+    align-items: center;
+  }
+  .hero__headline {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    font-size: 2.2rem;
   }
 }
